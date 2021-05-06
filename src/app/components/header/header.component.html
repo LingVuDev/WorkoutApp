@@ -1,19 +1,13 @@
 <mat-toolbar class="header">
   <span class="header__item">WorkoutApp</span>
-  <button mat-button class="header__item">
-    <mat-icon>person</mat-icon>
-    Profile
-  </button>
-  <button mat-button class="header__item">
-    <mat-icon>history</mat-icon>
-    History
-  </button>
-  <button mat-button class="header__item">
-    <mat-icon>add</mat-icon>
-    Start Workout
-  </button>
-  <button mat-button class="header__item">
-    <mat-icon>fitness_center</mat-icon>
-    Exercises
-  </button>
+  <nav mat-tab-nav-bar class="header__item header__nav-bar">
+    <a mat-tab-link
+      *ngFor="let link of navLinks"
+      [routerLink]="link.path"
+      routerLinkActive #rla="routerLinkActive"
+      [active]="activeLink === link.path">
+      <mat-icon>{{link.icon}}</mat-icon>
+      <span>{{ link.label }}</span>
+    </a>
+  </nav>
 </mat-toolbar>
