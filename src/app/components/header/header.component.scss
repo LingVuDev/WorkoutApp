@@ -1,0 +1,9 @@
+.header {
+  display: flex;
+  flex-direction: row;
+
+  &__item ~ &__item {
+    margin-left: 32px;
+  }
+}
+
