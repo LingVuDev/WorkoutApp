@@ -1,6 +1,6 @@
 <mat-toolbar class="header">
   <span class="header__item">WorkoutApp</span>
-  <nav mat-tab-nav-bar class="header__item header__nav-bar">
+  <nav mat-tab-nav-bar class="header__item header__nav-bar" disablePagination="true">
     <a mat-tab-link
       *ngFor="let link of navLinks"
       [routerLink]="link.path"

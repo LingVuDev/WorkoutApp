@@ -4,14 +4,15 @@ import { ProfileComponent } from './profile/profile.component';
 import { HistoryComponent } from './history/history.component';
 import { StartWorkoutComponent } from './start-workout/start-workout.component';
 import { ExercisesComponent } from './exercises/exercises.component';
+import { ComponentsModule } from '../components/components.module';
 
 @NgModule({
+  imports: [CommonModule, ComponentsModule],
   declarations: [
     ProfileComponent,
     HistoryComponent,
     StartWorkoutComponent,
     ExercisesComponent,
   ],
-  imports: [CommonModule],
 })
 export class PagesModule {}

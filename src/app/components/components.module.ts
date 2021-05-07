@@ -7,10 +7,11 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTabsModule } from '@angular/material/tabs';
+import { MainLayoutComponent } from './main-layout/main-layout.component';
 
 
 @NgModule({
-  declarations: [HeaderComponent],
+  declarations: [HeaderComponent, MainLayoutComponent],
   imports: [
     CommonModule,
     MatToolbarModule,
@@ -19,6 +20,6 @@ import { MatTabsModule } from '@angular/material/tabs';
     RouterModule,
     MatTabsModule,
   ],
-  exports: [HeaderComponent],
+  exports: [HeaderComponent, MainLayoutComponent],
 })
 export class ComponentsModule {}
