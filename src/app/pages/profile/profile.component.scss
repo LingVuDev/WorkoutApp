@@ -1,0 +1,22 @@
+.profile {
+  background-image: url('/assets/images/backgrounds/default.png');
+
+  &__header {
+    height: 400px;
+    max-height: 33vh;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &__image {
+    width: 200px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+
+    border-radius: 50%
+  }
+
+}

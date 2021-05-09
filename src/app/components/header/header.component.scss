@@ -1,0 +1,33 @@
+.header {
+  display: flex;
+  flex-direction: row;
+
+  &__nav-bar {
+    height: 100%;
+
+    ::ng-deep .mat-tab-links {
+      height: 100%;
+      align-items: center;
+
+      .mat-tab-link {
+        height: 100%;
+        * ~ * {
+          margin-left: 4px;
+        }
+      }
+    }
+  }
+
+  &__title {
+    cursor: pointer;
+  }
+
+  &__placeholder {
+    flex: 1;
+  }
+
+  &__item ~ &__item {
+    margin-left: 32px;
+  }
+}
+
