@@ -18,6 +18,14 @@
     }
   }
 
+  &__title {
+    cursor: pointer;
+  }
+
+  &__placeholder {
+    flex: 1;
+  }
+
   &__item ~ &__item {
     margin-left: 32px;
   }

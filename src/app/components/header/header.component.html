@@ -1,5 +1,5 @@
 <mat-toolbar class="header">
-  <span class="header__item">WorkoutApp</span>
+  <h1 class="header__item header__title" routerLink="timeline">WorkoutApp</h1>
   <nav mat-tab-nav-bar class="header__item header__nav-bar" disablePagination="true">
     <a mat-tab-link
       *ngFor="let link of navLinks"
@@ -10,4 +10,8 @@
       <span>{{ link.label }}</span>
     </a>
   </nav>
+  <div class="header__placeholder"></div>
+  <button mat-mini-fab class="header__item" routerLink="profile">
+    <mat-icon>person</mat-icon>
+  </button>
 </mat-toolbar>

@@ -9,10 +9,9 @@ import { filter } from 'rxjs/operators';
 })
 export class HeaderComponent implements OnInit {
   navLinks = [
-    { path: 'profile', label: 'Profile', icon: 'person' },
-    { path: 'history', label: 'History', icon: 'history' },
+    { path: 'timeline', label: 'Timeline', icon: 'home' },
+    { path: 'activity', label: 'Activity', icon: 'notifications' },
     { path: 'start', label: 'Start Workout', icon: 'add' },
-    { path: 'exercises', label: 'Exercises', icon: 'fitness_center' },
   ];
   activeLink;
 
