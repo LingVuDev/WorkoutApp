@@ -1,0 +1,24 @@
+.profile-stats-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 16px;
+  }
+
+  &__item:first-child {
+    padding-left: 0px;
+  }
+
+  &__item:last-child {
+    padding-right: 0px;
+  }
+
+  &__item ~ &__item {
+    border-left: 1px solid black;
+  }
+}

@@ -7,8 +7,18 @@ import { ExercisesComponent } from './exercises/exercises.component';
 import { ComponentsModule } from '../components/components.module';
 import { TimelineComponent } from './timeline/timeline.component';
 
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+
 @NgModule({
-  imports: [CommonModule, ComponentsModule],
+  imports: [
+    CommonModule,
+    ComponentsModule,
+    MatGridListModule,
+    MatButtonModule,
+    MatIconModule,
+  ],
   declarations: [
     ProfileComponent,
     ActivityComponent,

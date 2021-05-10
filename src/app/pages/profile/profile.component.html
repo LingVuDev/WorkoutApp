@@ -1,8 +1,17 @@
 <div class="profile">
   <app-main-layout>
     <header class="profile__header">
-      <h1>Hallo Max!</h1>
       <img class="profile__image mat-elevation-z8" src="/assets/images/profiles/male.png" alt="male">
+      <div class="profile__header-information">
+        <h1>John Doe</h1>
+        <div class="profile__header-actions">
+          <button mat-raised-button>Edit my profile</button>
+          <button mat-raised-button>
+            <mat-icon>share</mat-icon>
+          </button>
+        </div>
+        <app-profile-stats-card></app-profile-stats-card>
+      </div>
     </header>
   </app-main-layout>
 </div>;

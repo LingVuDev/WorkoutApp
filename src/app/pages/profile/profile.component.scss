@@ -1,22 +1,35 @@
 .profile {
-  background-image: url('/assets/images/backgrounds/default.png');
 
   &__header {
-    height: 400px;
-    max-height: 33vh;
     position: relative;
+    background-image: url('/assets/images/backgrounds/default.png');
     display: flex;
-    align-items: flex-end;
+    align-items: center;
+
+    &-information {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &-items {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 50%);
+      width: 100%;
+    }
+
+    &-actions {
+      * ~ * {
+        margin-left: 8px;
+      }
+      margin-bottom: 16px;
+    }
   }
 
   &__image {
-    width: 200px;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, 50%);
-
+    margin: 32px;
+    width: 150px;
     border-radius: 50%
   }
-
 }
