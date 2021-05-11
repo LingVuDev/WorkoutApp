@@ -11,10 +11,20 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MainLayoutComponent } from './main-layout/main-layout.component';
 import { MatCardModule } from '@angular/material/card';
 import { ProfileStatsCardComponent } from './profile-stats-card/profile-stats-card.component';
+import { PostComponent } from './post/post.component';
+import { CarouselComponent } from './carousel/carousel.component';
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
-  declarations: [HeaderComponent, MainLayoutComponent, ProfileStatsCardComponent],
+  declarations: [
+    HeaderComponent,
+    MainLayoutComponent,
+    ProfileStatsCardComponent,
+    PostComponent,
+    CarouselComponent,
+  ],
   imports: [
     CommonModule,
     MatToolbarModule,
@@ -24,7 +34,14 @@ import { ProfileStatsCardComponent } from './profile-stats-card/profile-stats-ca
     MatTabsModule,
     MatGridListModule,
     MatCardModule,
+    BrowserModule,
+    BrowserAnimationsModule,
   ],
-  exports: [HeaderComponent, MainLayoutComponent, ProfileStatsCardComponent],
+  exports: [
+    HeaderComponent,
+    MainLayoutComponent,
+    ProfileStatsCardComponent,
+    PostComponent,
+  ],
 })
 export class ComponentsModule {}
