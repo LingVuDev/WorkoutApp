@@ -1,5 +1,4 @@
 .profile {
-
   &__header {
     position: relative;
     background-image: url('/assets/images/backgrounds/default.png');
@@ -31,5 +30,11 @@
     margin: 32px;
     width: 150px;
     border-radius: 50%
+  }
+
+  &__main {
+    mat-grid-tile {
+      background: lightblue;
+    }
   }
 }

@@ -1,6 +1,14 @@
+@import 'variables.scss';
+
 .header {
   display: flex;
   flex-direction: row;
+  max-width: $layout-max-width;
+  padding: 0;
+
+  &-layout {
+    justify-content: center;
+  }
 
   &__nav-bar {
     height: 100%;
