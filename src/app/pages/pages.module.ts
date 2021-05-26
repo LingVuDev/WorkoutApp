@@ -10,6 +10,7 @@ import { TimelineComponent } from './timeline/timeline.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { MatTabsModule } from '@angular/material/tabs';
 
 @NgModule({
   imports: [
@@ -18,6 +19,7 @@ import { MatIconModule } from '@angular/material/icon';
     MatGridListModule,
     MatButtonModule,
     MatIconModule,
+    MatTabsModule,
   ],
   declarations: [
     ProfileComponent,

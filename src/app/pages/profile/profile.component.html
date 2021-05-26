@@ -17,11 +17,14 @@
       </div>
     </header>
     <main class="profile__main">
-      <mat-grid-list cols="4" rowHeight="1:1">
-        <mat-grid-tile *ngFor="let item of [].constructor(100); let i = index">
-          <app-post></app-post>
-        </mat-grid-tile>
-      </mat-grid-list>
+      <mat-tab-group mat-align-tabs="center">
+        <mat-tab label="Activity">
+          <div class="activity-card">
+            <app-activity-card></app-activity-card>
+          </div>
+        </mat-tab>
+        <mat-tab label="Achivements">Achivements</mat-tab>
+      </mat-tab-group>
     </main>
   </app-main-layout>
-</div>;
+</div>

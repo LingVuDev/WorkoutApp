@@ -15,7 +15,8 @@ import { PostComponent } from './post/post.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { ActivityCardComponent } from './activity-card/activity-card.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ProfileStatsCardComponent,
     PostComponent,
     CarouselComponent,
+    ActivityCardComponent,
   ],
   imports: [
     CommonModule,
@@ -36,12 +38,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatCardModule,
     BrowserModule,
     BrowserAnimationsModule,
+    FlexLayoutModule,
   ],
   exports: [
     HeaderComponent,
     MainLayoutComponent,
     ProfileStatsCardComponent,
     PostComponent,
+    ActivityCardComponent,
   ],
 })
 export class ComponentsModule {}

@@ -3,6 +3,8 @@
 .main {
   display: flex;
   justify-content: center;
+  background: $bg-color-lightgrey;
+  height: 100%;
 
   &__inner {
     max-width: $layout-max-width;
